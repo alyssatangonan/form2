@@ -18,7 +18,13 @@ p
     color: whitesmoke;
     margin-left: 1cm;
 }
-
+h9
+{
+    font-size:  13px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin-left: 0.5cm;
+}
 label
 {
     font-size: 13px;
@@ -46,7 +52,7 @@ label
     width: 1.5in;
 }
 
-#inemail
+#email
 {
     margin-left: 84px;
     width: 1.5in;
