@@ -31,22 +31,28 @@ function checkemail(){
 
 }
 
-function checkpass(){
+function checkpass(pass){
     var pass = document.getElementById('pass').value;
+    var check=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,15}$/;
+
+
     if (pass==""){
         document.getElementById("checkmsg").innerHTML = '';
 
     }else{
-         if ((pass.includes("@")==true)&&(pass>="A")&&(pass>="a")){
+         if (pass.match(check)){
              document.getElementById("checkmsg").innerHTML = 'Strong';
+
             } else {
-             document.getElementById("checkmsg").innerHTML = 'Weak';
+             document.getElementById("checkmsg").innerHTML = 'Weak';   
             }
         }
 
 
-
-
 }
+
+//ABCabc123@
+
+
 
 
