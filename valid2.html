@@ -11,8 +11,8 @@
     <div id="box">
         <form>
             <label>Login</label> <input type="text" id="login" required> <br>
-            <label>Password</label> <input type="password" id='pass' onclick="validate()" required><span id="msg"></span> <br>
-            <label>Confirm Password</label> <input type="password" id='pass2' required> <br>
+            <label>Password</label> <input type="password" id='pass' onmouseleave="checkpass()" required><h9 id="checkmsg"></h9><br>
+            <label>Confirm Password</label> <input type="password" id='pass2' onmouseleave="compare()" required> <br>
             <label>Gender</label>
             <select id="sel">
                 <option value="Male">Male</option>
@@ -20,10 +20,10 @@
                 <option value="Other">Other</option>
             </select>
             <br>
-            <label>Email</label> <input type="email" id='inemail' required> <br>
-            <button type="submit" id='reg' onclick="compare()">Register</button>
-            <p id="pass"></p> <br>
-            <p id="email"></p>
+            <label>Email</label> <input type="email" id='email' onmouseleave="checkemail()"required> <br>
+            <button type="submit" id='reg' >Register</button>
+            <p id="passmsg"></p> 
+            <p id="emailmsg"></p>
         </form>
     </div>
 </body>
